@@ -1,0 +1,47 @@
+<div class="vid-container">
+    <video class="bgvid" autoplay="autoplay" muted="muted" preload="auto" loop>
+        <source src="https://player.vimeo.com/external/226624975.sd.mp4?s=9c40db4cda60fee006e62c90e0fad26d1e488b65&profile_id=164" type="video/webm">
+    </video>
+    <div class="inner-container">
+        <video class="bgvid inner" autoplay="autoplay" muted="muted" preload="auto" loop>
+        <source src="https://player.vimeo.com/external/185024726.sd.mp4?s=2244a8bded9f1895582ae0b7cd3878cbd7fface4&profile_id=164" type="video/webm">
+      </video>
+        <div class="box">
+            <div class="alert alert-danger" *ngIf='failure'>
+                {{failure}}</div>
+            <div class="alert alert-success" *ngIf='success'>{{success}}</div>
+            <form #addRegisterForm='ngForm' (ngSubmit)='addUser(addRegisterForm)'>
+                <h1><i class="fa fa-user"></i>Register Here</h1>
+                <input type="number" name="userId" id="userId" #userId='ngModel' ngModel class="form-control" placeholder="Enter userId" required pattern="[0-9]{4,8}">
+                <div *ngIf='userId.touched && userId.invalid'>
+                    <div class="alert alert-danger" style="padding: 0% !important; width: 50% !important; margin-left: 25%;" *ngIf='userId.errors.required'>This field is mandatory</div>
+                    <div class="alert alert-danger" style="padding: 0% !important; width: 50% !important; margin-left: 25%;" *ngIf='userId.errors.pattern'>
+                        only digits are allowed(minimum 4 )
+                    </div>
+                </div>
+                <input type="text" name="userName" id="userName" #userName='ngModel' ngModel class="form-control" placeholder="Enter user name" required pattern="[A-Za-z]{5,20}">
+                <div *ngIf='userName.touched && userName.invalid'>
+                    <div class="alert alert-danger" style="padding: 0% !important; width: 50% !important; margin-left: 25%;" *ngIf='userName.errors.required'>This field is mandatory</div>
+                    <div class="alert alert-danger" style="padding: 0% !important; width: 50% !important; margin-left: 25%;" *ngIf='userName.errors.pattern'>
+                        only characters are allowed(minimum 5 )
+                    </div>
+                </div>
+                <input type="password" name="userPassword" id="userPassword" #userPassword='ngModel' ngModel class="form-control" placeholder="Enter your password..." required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{8,14}$">
+                <div *ngIf='userPassword.invalid && userPassword.touched'>
+                    <div class="alert alert-danger" *ngIf='userPassword.errors.required' style="padding: 0% !important; width: 50% !important; margin-left: 25%;">This field is mandatory</div>
+                    <div class="alert alert-danger" *ngIf='userPassword.errors.pattern' style="padding: 0% !important; width: 50% !important; margin-left: 25%;">8 to 14 characters, should include one uppercase,one lowercase,one digit and one special character.
+                    </div>
+                </div>
+                <input type="date" name="dateOfBirth" id="dateOfBirth" #dateOfBirth='ngModel' ngModel class="form-control" placeholder="Enter your date of birth..." required>
+                <input type="text" name="contact" id="contact" #contact='ngModel' ngModel class="form-control" placeholder="Enter contact number" required pattern="[0-9]{10}">
+                <div *ngIf='contact.touched && contact.invalid'>
+                    <div class="alert alert-danger" style="padding: 0% !important; width: 50% !important; margin-left: 25%;" *ngIf='contact.errors.required'>This field is mandatory</div>
+                    <div class="alert alert-danger" style="padding: 0% !important; width: 50% !important; margin-left: 25%;" *ngIf='contact.errors.pattern'>
+                        only digits are allowed
+                    </div>
+                </div>
+                <button [disabled]='addRegisterForm.form.invalid' type="submit"><i class="fa fa-sign-in"></i> Register</button>
+            </form>
+        </div>
+    </div>
+</div>

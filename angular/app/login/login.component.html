@@ -1,0 +1,32 @@
+<div class="vid-container">
+    <video class="bgvid" autoplay="autoplay" muted="muted" preload="auto" loop>
+        <source src="https://player.vimeo.com/external/185024734.sd.mp4?s=8c9d0d5de333a1472f6dc0632cea70f2a975110a&profile_id=164" type="video/webm">
+    </video>
+    <div class="inner-container">
+        <video class="bgvid inner" autoplay="autoplay" muted="muted" preload="auto" loop>
+        <source src="https://player.vimeo.com/external/166335957.sd.mp4?s=2bb992f56e6dc915a90065327d2884b3d6672a4d&profile_id=164" type="video/webm">
+      </video>
+        <div class="box">
+            <div class="alert alert-danger" *ngIf='failure'>
+                {{failure}}</div>
+            <div class="alert alert-danger" *ngIf='exception'>{{exception}}</div>
+            <h1><i class="fa fa-user"></i> Login Here</h1>
+            <form #loginForm='ngForm' (ngSubmit)='login(loginForm)'>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="userId" id="userId" placeholder="Enter your UserId" required #userId='ngModel' ngModel />
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" required name="userPassword" id="userPassword" placeholder="Enter your Password" #userPassword='ngModel' ngModel required/>
+                </div>
+                <div class="form-group ">
+                    <button type="submit" class="btn" style="background-color: dodgerblue;"><i class="fa fa-sign-in"></i> Login</button>
+                </div>
+                <div style="margin-left: 100px;">
+                    <a class="forgot" routerLink="/forgot-password">
+                        <h6 style="color: white; padding-left: 25px; font-size: 20px;">Forgot Password?</h6>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

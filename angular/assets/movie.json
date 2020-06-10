@@ -1,0 +1,61 @@
+[
+
+    {
+        "name": "Soul",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/images/cinema/Soul-App-poster-608x800-App-poster-608x800-a-3cd77de3-4ece-4d15-874f-0360d093deb7.jpg",
+        "screen1": "A",
+		"showTime1":"11 A.M.",
+		"screen2": "B",
+		"showTime2":"2 P.M.",
+		"screen3": "C",
+		"showTime3":"7 P.M."
+ 
+    }, {
+        "name": "Bunty Aur Babli 2",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/images/cinema/Bunty-Aur-Babli-2-App-poster-608x800-f63b1342-067a-4084-ad9f-2809ce0ece6f.jpg",
+        "screen1": "B",
+		"showTime1":"10 A.M.",
+		"screen2": "E",
+		"showTime2":"1 P.M.",
+		"screen3": "C",
+		"showTime3":"5 P.M."
+    }, {
+         "name": "Jungle Cruise",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/images/cinema/Jungle-Cruise-App-poster-608x800-App-poster-608x800-a-1b7a218d-1de6-48a5-ac4d-c9595542b7ce.jpg",
+        "screen1": "C",
+		"showTime1":"9:30 A.M.",
+		"screen2": "E",
+		"showTime2":"2 P.M.",
+		"screen3": "F",
+		"showTime3":"6 P.M."
+    }, {
+        "name": "Gangubai Kathiawadi",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/images/cinema/Gangubai-Kathiawadi-App-poster-608x800-a-239d631b-313e-425c-9da6-e010dea78cd5.jpg",
+        "screen1": "B",
+		"showTime1":"9 A.M.",
+		"screen2": "E",
+		"showTime2":"1 P.M.",
+		"screen3": "C",
+		"showTime3":"7 P.M."
+    },
+    {
+	
+         "name": "Bachchan Pandey",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/images/cinema/Bachchan-Pandey-APP-608x800-c70c57c1-49bc-4e73-8ad1-8569d71e86d2.jpg",
+        "screen1": "B",
+		"showTime1":"10 A.M.",
+		"screen2": "E",
+		"showTime2":"1 P.M.",
+		"screen3": "C",
+		"showTime3":"5 P.M."
+    },{
+         "name": "No Time To Die",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/images/cinema/No-Time-To-Die-English-App-poster-608x800-eb081ead-e27e-4db1-83be-b6b4a7c2ce68.jpg",
+        "screen1": "B",
+		"showTime1":"10 A.M.",
+		"screen2": "E",
+		"showTime2":"1 P.M.",
+		"screen3": "C",
+		"showTime3":"5 P.M."
+    }
+]

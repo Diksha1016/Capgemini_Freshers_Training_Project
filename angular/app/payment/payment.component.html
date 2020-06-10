@@ -1,0 +1,34 @@
+<div class ="app-container">
+    <div class="top-box">
+    <p><span class="left-icon">&#x2190;</span>Checkout<span class="right-icon">&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;</span></p>
+</div>
+<div class="middle-box">
+    <h1>Payment Gateway</h1>
+</div>
+<div class="bottom-box">
+    <button type="button" class="payment-option-btn">Pay with PayPal</button>
+    <button type="button" class="payment-option-btn">Pay using Netbanking</button>
+</div>
+<div class="card-details">
+    <p>Pay using credit or debit card</p>
+    <div class="card-num-field-group">
+        <label>Card Number</label><br>
+        <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx" [textMask]="{mask: cardMask}" >
+</div>
+
+<div class="date-field-group">
+    <label>Expiry Date</label><br>
+    <input type="text" class="date-field" placeholder="mm" [textMask]="{mask: monthMask}">
+    <input type="text" class="date-field" placeholder="yyyy" [textMask]="{mask: yearMask}">
+</div>
+
+<div class="cvc-field-group">
+    <label>CVC</label><br>
+    <input type="password" class="cvc-field" placeholder="xxx" [textMask]="{mask: cvMask}">
+</div>
+<div class="name-field-group">
+    <label>Card Holder Name</label><br>
+    <input type="text" class="name-field" placeholder="Full Name">
+</div>
+<button type="button" class="pay-btn" (click)="onclick()">Pay Now</button>
+</div>

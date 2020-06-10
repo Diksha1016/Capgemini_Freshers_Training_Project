@@ -1,0 +1,10 @@
+<div class="col-md-4 card float-left" *ngFor='let movie of movies'>
+    <img src="{{movie.image}}" alt="" height="250px" class="card-img-top">
+    <h4 class="text-center">{{movie.name}}</h4>
+    <p>Screen 1:&nbsp;{{movie.screen1}}</p>
+    <p>Show Timing:&nbsp;<a routerLink="/book-now">{{movie.showTime1}}</a></p>
+    <p>Screen 2:&nbsp;{{movie.screen2}}</p>
+    <p>Show Timing:&nbsp;<a routerLink="/book-now">{{movie.showTime2}}</a></p>
+    <p>Screen 3:&nbsp;{{movie.screen3}}</p>
+    <p>Show Timing:&nbsp;<a routerLink="/book-now">{{movie.showTime3}}</a></p>
+</div>

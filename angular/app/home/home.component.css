@@ -1,0 +1,9 @@
+img{
+  height: 650px;
+  weight:300px;
+ 
+}
+#carouselExampleCaptions{
+  z-index:-1;
+  position: relative;
+}

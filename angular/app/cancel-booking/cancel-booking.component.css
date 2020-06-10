@@ -1,0 +1,20 @@
+thead {
+    background: skyblue;
+}
+
+tbody {
+    background: mintcream;
+}
+
+button {
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.table {
+    text-align: center;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

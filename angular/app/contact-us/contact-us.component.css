@@ -1,0 +1,123 @@
+/* .background {
+    align-self: center;
+    padding-left: 66%;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/30/17/26/success-2697951_1280.jpg');
+    background-size: cover;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background-color: rgba(0, 0, 30, .3);
+    color: whitesmoke;
+}
+
+span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+span:before,
+span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+}
+
+span:before {
+    left: -2.5px;
+}
+
+span:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+} */
+
+.card {
+    background-color: rgb(159, 159, 231);
+}
+
+h4 {
+    text-align: center;
+}
+
+h2 {
+    color: seashell;
+}
+
+
+.col-lg-4 {
+    align-self: center;
+    padding-top: 2%;
+    margin-left: 35%;
+    margin-right: 50%;
+}
+
+.top {
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.social-icons {
+    padding-left: 80%;
+    background-color: rgb(80, 80, 226);
+}
+
+i {
+    padding-left: 10%;
+}
+
+.background {
+    background-color: #212529;
+    padding-bottom: 2%;
+}
+.d-hotline.h-btn {
+    border-radius: 34px 8px 34px 34px;
+    bottom: 6px;
+    box-shadow: 0 5px 4px 0 rgba(0,0,0,.26);
+    color: #fff;
+    cursor: pointer;
+    display: table;
+    position: absolute;
+    right: 5px;
+    z-index: 9995;
+    height: 60px;
+    width: 60px;
+}
+.service{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:red;
+}
+.row {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
+}
+h4{
+    font-family: 'Times New Roman', Times, serif;
+}

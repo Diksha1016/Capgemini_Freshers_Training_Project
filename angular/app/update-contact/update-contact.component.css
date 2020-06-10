@@ -1,0 +1,18 @@
+.background {
+    vertical-align: middle;
+    padding-left: 35%;
+    padding-right: 38%;
+}
+
+img {
+    align-self: center;
+    padding-left: 125px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.example3 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 8px 15px black;
+  }

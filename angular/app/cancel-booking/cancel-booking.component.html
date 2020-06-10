@@ -1,0 +1,49 @@
+<div class="image" style="background-image: url('https://www.itl.cat/pngfile/big/55-556325_plain-simple-wallpapers-simple-plain-background-hd.jpg');  
+background-size: cover; padding-top: 50px; padding-bottom: 30%;">
+    <div class="alert alert-success" *ngIf='success'>
+        {{success}}
+        <span class="float-right">
+        <button (click)='deleteMessage()'>&times;</button>
+    </span>
+    </div>
+    <div class="alert alert-danger" *ngIf='failure'>{{failure}}</div>
+    <h2 class="font-weight-bold text-center text-light">
+        Booking Details
+    </h2>
+    <input type="search" name="search" id="search" class='form-control col-md-4 offset-4 mt-3 mb-3' [(ngModel)]='search'>
+    <div class="col-md-9 ">
+        <table class="table table-bordered mt-3" style="margin-left: 15%; margin-right: 20px;">
+            <thead class="thead text-center">
+                <tr>
+                    <th scope="col">Booking Id</th>
+                    <th scope="col">User Id</th>
+                    <th scope="col">Theater Id</th>
+                    <th scope="col">Movie Name</th>
+                    <th scope="col">Screen</th>
+                    <th scope="col">Booking Date</th>
+                    <th scope="col">Show Time</th>
+                    <th scope="col">Total Cost</th>
+                    <th scope="col">Number Of Seats</th>
+                    <th scope="col">Cancel Booking</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let booking of bookings'>
+                    <th>{{booking.bookingId}}</th>
+                    <th>{{booking.userId}}</th>
+                    <th>{{booking.theaterId}}</th>
+                    <td>{{booking.movieName}}</td>
+                    <td>{{booking.screen}}</td>
+                    <td>{{booking.bookingDate}}</td>
+                    <td>{{booking.showTime}}</td>
+                    <td>{{booking.totalCost}}</td>
+                    <td>{{booking.noOfSeats}}</td>
+                    <td>
+                        <button class="btn">
+                        <img style="margin-left: 15px " height="40px " width="50px " src="data:image/jpeg;base64,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" (click)=' deleteBooking(booking) '>
+                    </button> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
